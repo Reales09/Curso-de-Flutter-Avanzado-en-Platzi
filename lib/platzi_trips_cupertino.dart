@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'home_trips.dart';
-import 'search_trips.dart';
+import 'Place/ui/screens/home_trips.dart';
+import 'Place/ui/screens/search_trips.dart';
 import 'profile_trips.dart';
 
 class PlatziTripsCupertino extends StatelessWidget {
@@ -10,19 +10,20 @@ class PlatziTripsCupertino extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       bottomNavigationBar: CupertinoTabScaffold(
+        backgroundColor: Colors.transparent,
         tabBar: CupertinoTabBar(
             items: [
               BottomNavigationBarItem(
                   icon: Icon(Icons.home, color: Colors.indigo),
-                  title: Text("")
+                  label: ""
               ),
               BottomNavigationBarItem(
                   icon: Icon(Icons.search, color: Colors.indigo),
-                  title: Text("")
+                  label: ""
               ),
               BottomNavigationBarItem(
                   icon: Icon(Icons.person, color: Colors.indigo),
-                  title: Text("")
+                  label: ""
               ),
             ]
         ),
